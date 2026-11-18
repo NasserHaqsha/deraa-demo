@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>درع: فحص امتثال سياسات الأمن السيبراني (نسخة عرض)</title>
+<meta name="description" content="درع يطابق سياسات الأمن السيبراني في منشأتك مع ضوابط الهيئة الوطنية للأمن السيبراني، على جهازك.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20119%22%3E%3Cg%20fill%3D%22%2317805C%22%3E%3Cpath%20d%3D%22M50%2C3%20C37%2C10%2023%2C13%208%2C13%20V55%20C8%2C84%2026%2C104%2050%2C116%20Z%22%2F%3E%3Crect%20x%3D%2254.5%22%20y%3D%2227%22%20width%3D%2230%22%20height%3D%229%22%20rx%3D%224.5%22%2F%3E%3Crect%20x%3D%2262.5%22%20y%3D%2244%22%20width%3D%2222%22%20height%3D%229%22%20rx%3D%224.5%22%2F%3E%3Crect%20x%3D%2255%22%20y%3D%2261%22%20width%3D%2228%22%20height%3D%229%22%20rx%3D%224.5%22%2F%3E%3Crect%20x%3D%2262%22%20y%3D%2278%22%20width%3D%2214%22%20height%3D%229%22%20rx%3D%224.5%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M50%2C3%20C63%2C10%2077%2C13%2092%2C13%20V55%20C92%2C84%2074%2C104%2050%2C116%20C26%2C104%208%2C84%208%2C55%20V13%20C23%2C13%2037%2C10%2050%2C3%20Z%22%20fill%3D%22none%22%20stroke%3D%22%2317805C%22%20stroke-width%3D%225%22%20stroke-linejoin%3D%22round%22%20transform%3D%22translate%281.25%2C1.4%29%20scale%28.975%29%22%2F%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#0B1621">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<style>:root { --font: "Dubai", "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; }</style>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+
+<header class="top night">
+  <div class="wrap top-in">
+    <a class="brand" href="#home" aria-label="درع، الصفحة الرئيسية">
+      <svg class="mark" viewBox="0 0 100 119" aria-hidden="true"><g fill="currentColor"><path d="M50,3 C37,10 23,13 8,13 V55 C8,84 26,104 50,116 Z"/><rect x="54.5" y="27" width="30" height="9" rx="4.5"/><rect x="62.5" y="44" width="22" height="9" rx="4.5"/><rect x="55" y="61" width="28" height="9" rx="4.5"/><rect x="62" y="78" width="14" height="9" rx="4.5"/></g><path d="M50,3 C63,10 77,13 92,13 V55 C92,84 74,104 50,116 C26,104 8,84 8,55 V13 C23,13 37,10 50,3 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" transform="translate(1.25,1.4) scale(.975)"/></svg>
+      <span class="brand-words"><span class="brand-name">درع</span><span class="brand-sub">امتثال الأمن السيبراني</span></span>
+    </a>
+    <nav class="nav" aria-label="التنقل">
+      <a href="#home" data-nav="home" aria-label="الرئيسية"><span data-icon="home"></span><span class="nav-t">الرئيسية</span></a>
+      <a href="#setup" data-nav="setup" aria-label="فحص جديد"><span data-icon="plus"></span><span class="nav-t">فحص جديد</span></a>
+      <button type="button" class="linkish" data-action="demo" aria-label="عرض تجريبي"><span data-icon="play"></span><span class="nav-t">عرض تجريبي</span></button>
+    </nav>
+    <div class="status" id="status" role="status" aria-live="polite">
+      <span class="dot"></span><span class="status-text">نتأكد من النموذج المحلي…</span>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- الرئيسية -->
+  <section class="view" data-view="home" aria-labelledby="hero-title">
+    <div class="hero-band night fx-host"><div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div><canvas class="fx" aria-hidden="true"></canvas><div class="wrap hero">
+      <div class="hero-copy">
+        <h1 id="hero-title">اعرف أين تقف سياساتك من ضوابط الهيئة</h1>
+        <p class="lead">يقرأ درع سياسات الأمن السيبراني في منشأتك، ويطابقها مع ضوابط الهيئة الوطنية للأمن السيبراني ضابطًا ضابطًا. لكل حكم جملته من نص سياستك، ولكل فجوة البند الذي يسدها.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#setup">ابدأ فحص سياساتك</a>
+          <button type="button" class="btn btn-ghost" data-action="demo"><span data-icon="play"></span> شاهد عرضًا تجريبيًا</button>
+        </div>
+        <ul class="hero-facts">
+          <li class="f1"><span data-icon="lock"></span>كل التحليل على هذا الجهاز</li>
+          <li class="f2"><span data-icon="doc"></span>98 ضابطًا من NCNICC-1:2025</li>
+          <li class="f3"><span data-icon="clip"></span>كل حكم معه اقتباس من سياستك</li>
+        </ul>
+      </div>
+      <figure class="hero-shield">
+        <div class="mosaic" id="hero-mosaic" aria-hidden="true"></div>
+        <figcaption>كل خلية ضابط من ضوابط <b>NCNICC-1:2025</b>، مرتبة من الحوكمة في الأعلى إلى الأطراف الخارجية في الأسفل. الألوان هنا للتوضيح.</figcaption>
+      </figure>
+    </div></div>
+
+    <div class="wrap how" aria-labelledby="how-title">
+      <h2 id="how-title">كيف يفحص درع سياساتك</h2>
+      <p>أربع مراحل لكل ضابط، وكلها على هذا الجهاز.</p>
+      <ol class="steps reveal-group">
+        <li><span class="step-ic" data-icon="read"></span><h3>يقرأ</h3><p>يقسم ملفات PDF وWord إلى بنود، ويحفظ رقم كل بند واسم سياسته.</p></li>
+        <li><span class="step-ic" data-icon="search"></span><h3>يبحث</h3><p>يجلب لكل ضابط أقرب البنود بالمعنى وبالكلمات معًا.</p></li>
+        <li><span class="step-ic" data-icon="chip"></span><h3>يحكم</h3><p>النموذج المحلي يحكم على كل عنصر في الضابط، ولا يُقبل حكم دون اقتباس حرفي من سياستك.</p></li>
+        <li><span class="step-ic" data-icon="fix"></span><h3>يصحّح</h3><p>يقترح لكل فجوة البند الرسمي من نماذج سياسات الهيئة باسم منشأتك.</p></li>
+      </ol>
+    </div>
+
+    <div class="privacy-wrap"><div class="privacy night fx-host reveal"><div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div><canvas class="fx" aria-hidden="true"></canvas>
+      <span class="privacy-ic" data-icon="lock"></span>
+      <div>
+        <h2>سياساتك لا تغادر جهازك</h2>
+        <p>الملفات تُحفظ في مجلد مؤقت على هذا الجهاز، والنموذج اللغوي يعمل محليًا عبر Ollama، والموقع نفسه لا يتصل بأي خدمة خارجية.</p>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- فحص جديد -->
+  <section class="view" data-view="setup" aria-labelledby="setup-title" hidden>
+    <div class="wrap setup">
+      <div class="setup-head">
+        <h1 id="setup-title">فحص جديد</h1>
+        <p class="lead">ثلاث خطوات، ثم يبدأ التحليل على جهازك.</p>
+      </div>
+      <form class="setup-grid" id="setup-form" novalidate>
+        <fieldset class="panel step-panel">
+          <legend><span class="num">1</span> ارفع السياسات</legend>
+          <label class="drop" id="drop">
+            <input type="file" id="file-input" accept=".pdf,.docx" multiple>
+            <span class="drop-ic" data-icon="upload"></span>
+            <span class="drop-title">اسحب ملفات السياسات هنا، أو اخترها من جهازك</span>
+            <span class="drop-sub">PDF أو Word، حتى 50 ميجا للملف</span>
+          </label>
+          <ul class="files" id="files" aria-live="polite"></ul>
+        </fieldset>
+
+        <fieldset class="panel step-panel">
+          <legend><span class="num">2</span> عرّف بالمنشأة</legend>
+          <label class="field">
+            <span>اسم المنشأة</span>
+            <input type="text" id="company" autocomplete="organization" placeholder="مثال: شركة واحة الشمال للتقنية">
+            <small>يظهر في البنود المقترحة وفي التقرير.</small>
+          </label>
+          <div class="field">
+            <span id="cat-label">فئة المنشأة</span>
+            <div class="seg" role="radiogroup" aria-labelledby="cat-label" id="category"></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="panel step-panel">
+          <legend><span class="num">3</span> اختر طريقة التحليل</legend>
+          <div class="modes" role="radiogroup" aria-label="طريقة التحليل" id="modes"></div>
+          <p class="mode-warn" id="mode-warn" hidden></p>
+        </fieldset>
+
+        <div class="setup-go">
+          <button type="submit" class="btn btn-primary btn-lg" id="start">ابدأ التحليل</button>
+          <p class="form-msg" id="form-msg" role="alert"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- الفحص الحي -->
+  <section class="view night fx-host" data-view="scan" aria-labelledby="scan-title" hidden>
+    <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div><canvas class="fx" aria-hidden="true"></canvas>
+    <div class="wrap scan">
+      <div class="scan-stage">
+        <div class="mosaic mosaic-scan" id="scan-mosaic" aria-hidden="true"></div>
+      </div>
+      <div class="scan-side">
+        <p class="scan-kicker" id="scan-kicker">جاري الفحص</p>
+        <h1 id="scan-title">نفحص سياسات المنشأة</h1>
+        <div class="scan-progress">
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="ring-bg" cx="60" cy="60" r="52"/>
+            <circle class="ring-fg" id="scan-ring" cx="60" cy="60" r="52"/>
+          </svg>
+          <div class="ring-text"><strong id="scan-n">0</strong><span id="scan-total">من 0 ضابط</span></div>
+        </div>
+        <p class="scan-eta" id="scan-eta" aria-live="polite"></p>
+        <ol class="feed" id="feed" aria-live="polite" aria-label="آخر الأحكام"></ol>
+        <p class="scan-note">التحليل يعمل على جهازك. اترك الصفحة مفتوحة، أو ارجع لها لاحقًا من نفس الرابط.</p>
+        <button type="button" class="btn btn-ghost" id="cancel"><span data-icon="stop"></span> أوقف التحليل</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- النتائج -->
+  <section class="view" data-view="results" aria-labelledby="res-title" hidden>
+    <div id="results"></div>
+  </section>
+
+</main>
+
+<aside class="drawer" id="drawer" aria-hidden="true" aria-labelledby="drawer-title" role="dialog">
+  <div class="drawer-scrim" data-close></div>
+  <div class="drawer-panel" tabindex="-1">
+    <button type="button" class="drawer-x" data-close aria-label="إغلاق"><span data-icon="x"></span></button>
+    <div id="drawer-body"></div>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<footer class="foot night">
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="#home" aria-label="درع"><svg class="mark" viewBox="0 0 100 119" aria-hidden="true"><g fill="currentColor"><path d="M50,3 C37,10 23,13 8,13 V55 C8,84 26,104 50,116 Z"/><rect x="54.5" y="27" width="30" height="9" rx="4.5"/><rect x="62.5" y="44" width="22" height="9" rx="4.5"/><rect x="55" y="61" width="28" height="9" rx="4.5"/><rect x="62" y="78" width="14" height="9" rx="4.5"/></g><path d="M50,3 C63,10 77,13 92,13 V55 C92,84 74,104 50,116 C26,104 8,84 8,55 V13 C23,13 37,10 50,3 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" transform="translate(1.25,1.4) scale(.975)"/></svg><span class="brand-words"><span class="brand-name">درع</span><span class="brand-sub">امتثال الأمن السيبراني</span></span></a>
+      <p>مشروع تخرج في أكاديمية أولو، مسار الذكاء الاصطناعي.</p>
+    </div>
+    <div>
+      <span class="k">الفريق</span>
+      <p>ناصر آل هقشه، أحمد الشهري، أسامة هروبي، ثامر عيد</p>
+    </div>
+    <div>
+      <span class="k">الإشراف</span>
+      <p>أ. لمى عياش، أ. غيداء الشهري</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/static.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
